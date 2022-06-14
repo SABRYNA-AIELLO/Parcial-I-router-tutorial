@@ -1,26 +1,18 @@
-import {
-  NavLink,
-  Outlet,
-  useSearchParams,
-} from "react-router-dom";
+import { NavLink, Outlet, useSearchParams,} from "react-router-dom";
 import { getInvoices } from "../data";
+
 
 export default function Invoices() {
   let invoices = getInvoices();
   let [searchParams, setSearchParams] = useSearchParams();
 
-  /*export default function Invoice() {
-    let navigate = useNavigate();
-    let location = useLocation();
-    let params = useParams();
-    let invoice = getInvoice(parseInt(params.invoiceId, 10));*/
-
   return (
     <div style={{ display: "flex" }}>
       <nav
         style={{
-          borderRight: "solid 1px",
+          borderRight: "solid 10px",
           padding: "1rem",
+          color: "green",
         }}
       >
         <input
@@ -47,6 +39,7 @@ export default function Invoices() {
                 display: "block",
                 margin: "1rem 0",
                 color: isActive ? "red" : "",
+                fontSize: "30px",
               })}
               to={`/invoices/${invoice.number}`}
               key={invoice.number}
@@ -59,3 +52,4 @@ export default function Invoices() {
     </div>
   );
 }
+

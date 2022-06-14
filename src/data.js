@@ -9,33 +9,33 @@ export function getInvoices() {
   
   let invoices = [
     {
-      name: "Santa Monica",
+      name: "Adidas",
       number: 1995,
-      amount: "$10,800",
+      amount: "$510,800",
       due: "12/05/1995",
     },
     {
-      name: "Stankonia",
+      name: "Converse",
       number: 2000,
-      amount: "$8,000",
+      amount: "$208,000",
       due: "10/31/2000",
     },
     {
-      name: "Ocean Avenue",
+      name: "Nike",
       number: 2003,
-      amount: "$9,500",
+      amount: "$389,500",
       due: "07/22/2003",
     },
     {
-      name: "Tubthumper",
+      name: "Topper",
       number: 1997,
-      amount: "$14,000",
+      amount: "$94,000",
       due: "09/01/1997",
     },
     {
-      name: "Wide Open Spaces",
+      name: "Puma",
       number: 1998,
-      amount: "$4,600",
+      amount: "$174,600",
       due: "01/27/1998",
     },
   ];
