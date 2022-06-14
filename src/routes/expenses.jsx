@@ -4,7 +4,7 @@ import { getExpenses } from "../data2";
 
 export default function Expenses() {
   let expenses = getExpenses ();
-  let [searchParams, setSearchParams] = useSearchParams ();
+  let [searchParams, setSearchParams] = useSearchParams ({ replace: true});
 
   return (
     <div style={{ display: "flex" }}>
